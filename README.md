@@ -1,5 +1,7 @@
 # constant-LSC
-Code to calculate Constant Length scale calibration for the 2018 pp Run fill 6868
+This code used to calculate Constant Length scale calibration for the 2018 pp Run fill 6868
 1- run find_files.py to get the input files for analysis 
-2- run analysis_ls.py to get the lumisection values.
-3- run analysis_time.py to get the timestamp values.
+2- run analysis_time_using_step_size_chi2.py to get the correction and uncertainty by using timestamp sellection after scaling the beam positions with the step size and the errors are scalled with the function max(1,sqrt(chi2/ndf)).
+3- run analysis_time_without_step_size_chi2.py to get the correction and uncertainty by using timestamp sellection without scaling the beam positions with the step size and the errors are scalled with the function max(1,sqrt(chi2/ndf)).
+4- run analysis_ls_without_step_size_pos.py to get the correction and uncertainty by using lumisection sellection without scaling the beam positions with the step size. I did not scale the errors with the function max(1,sqrt(chi2/ndf)) as I used the timestamp sellection for the final results, also the difference between the lumisection and timestamp sellection is very small so it can be neglected.
+run analysis_ls_using_step_size_pos.py to get the correction and uncertainty by using lumisection sellection after scaling the beam positions with the step size. I did not scale the errors with the function max(1,sqrt(chi2/ndf)) as I used the timestamp sellection for the final results, also the difference between the lumisection and timestamp sellection is very small so it can be neglected.
