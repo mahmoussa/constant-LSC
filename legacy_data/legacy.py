@@ -38,8 +38,8 @@ no_joscha_nom_yscan_backward =  [0.9996, 0.003733, 0.02573 / 3]
 
 no_joscha_dor_xscan_forward =  [-0.9925, 0.002974, 0.1497 / 3] 
 no_joscha_dor_xscan_backward =  [-0.9942, 0.003112, 0.02226 / 3]
-no_joscha_dor_yscan_forward =  []
-no_joscha_dor_yscan_backward =  []
+no_joscha_dor_yscan_forward =  [0.9987, 0.00391, 0.191 / 3]
+no_joscha_dor_yscan_backward =  [0.9988, 0.00373, 0.06529 / 3]
 
 no_joscha_arc_xscan_forward =  [-0.9932, 0.002976, 0.7733 / 3] 
 no_joscha_arc_xscan_backward =  [-0.994, 0.003111, 0.356 / 3]
